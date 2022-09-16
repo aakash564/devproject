@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: True
+  become_method: sudo
+  tasks:
+
+    - name: Deploy static website
+      copy:
+        src: ./devpro # We have define a html page
+        dest: /var/www/html/
