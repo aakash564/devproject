@@ -6,5 +6,5 @@
 
     - name: Deploy static website
       copy:
-        src: index.html # We have define a html page
+        src: ./ # We have define a html page
         dest: /var/www/html/
